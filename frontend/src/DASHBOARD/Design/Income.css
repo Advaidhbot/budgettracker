@@ -1,0 +1,20 @@
+/* Income.css */
+
+.income-bg {
+  background-color: #f9fbfc;
+  min-height: 100vh;
+  padding: 32px;
+  color: #1a1a1a;
+}
+
+.income-section {
+  margin-bottom: 32px;
+}
+
+.income-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 128, 96, 0.05);
+}

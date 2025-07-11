@@ -1,0 +1,55 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  padding-right: 40px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #f8f9fa;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.input-field:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.15);
+}
+
+.input-password-toggle {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.input-password-toggle:hover {
+  background-color: #e9ecef;
+}

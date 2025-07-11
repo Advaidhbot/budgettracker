@@ -1,0 +1,93 @@
+.auth-form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-form-container h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1b4332;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form button {
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-form button:hover {
+  background-color: #218838;
+}
+
+.redirect {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  color: #444;
+}
+
+.redirect a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.error-message {
+  color: #e63946;
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+.form-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.forgot-link {
+  color: #2563eb;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.forgot-link:hover {
+  color: #1d4ed8;
+}
+
+.signup-redirect {
+  color: #111827;
+}
+
+.signup-redirect a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.signup-redirect a:hover {
+  color: #1d4ed8;
+}
+
+.separator {
+  color: #888;
+}

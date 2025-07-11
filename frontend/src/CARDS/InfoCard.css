@@ -1,0 +1,69 @@
+/* InfoCard.css */
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #ffffff;
+  border: 1px solid #d6e3db;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(45, 106, 79, 0.06);
+  min-width: 220px;
+  transition: box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+  box-shadow: 0 6px 16px rgba(45, 106, 79, 0.12);
+}
+
+.info-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* Reusable color themes */
+.bg-green {
+  background-color: #e6f4ea;
+  color: #1f7a4b;
+}
+
+.bg-blue {
+  background-color: #e0f2fe;
+  color: #2563eb;
+}
+
+.bg-red {
+  background-color: #fdecea;
+  color: #b91c1c;
+}
+
+.bg-yellow {
+  background-color: #fef9c3; 
+}
+
+
+.info-card__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-card__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+}
+
+.info-card__value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1f7a4b;
+  margin-top: 4px;
+}

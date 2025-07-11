@@ -1,0 +1,51 @@
+/* ExpenseTransactions.css */
+
+.expense-transactions-container {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(30, 128, 96, 0.06);
+}
+
+.expense-transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.expense-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e7f4e;
+}
+
+.see-all-btn {
+  background-color: #e6f4ee;
+  color: #1e7f4e;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.see-all-btn:hover {
+  background-color: #c4eadc;
+}
+
+.arrow-icon {
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

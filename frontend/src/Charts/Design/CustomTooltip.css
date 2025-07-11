@@ -1,0 +1,20 @@
+.custom-tooltip {
+  background-color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: #111827;
+  transition: all 0.2s ease;
+}
+
+.custom-tooltip p {
+  margin: 4px 0;
+}
+
+.custom-tooltip span {
+  color: #10b981; /* Emerald green for amount */
+  font-weight: 600;
+}

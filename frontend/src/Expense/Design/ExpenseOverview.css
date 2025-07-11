@@ -1,0 +1,71 @@
+.expense-overview-card {
+  background-color: #ffffff;
+  border-radius: 1.3rem;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 128, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 100%;
+  animation: fade-in-up 0.6s ease both;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.expense-overview-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.expense-overview-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #17663c;
+}
+
+.expense-overview-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 6px;
+  max-width: 480px;
+}
+
+.expense-overview-add-btn {
+  background-color: #17663c;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expense-overview-add-btn:hover {
+  background-color: #0e4b2b;
+}
+
+.expense-overview-add-icon {
+  font-size: 16px;
+}
+
+.expense-overview-chart {
+  width: 100%;
+  min-height: 300px;
+}

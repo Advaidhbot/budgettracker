@@ -1,0 +1,34 @@
+/* DashboardLayout.css */
+
+.dashboard-main {
+  display: flex;
+  min-height: calc(100vh - 60px); /* adjust for navbar height */
+  background-color: #f5f7f9;
+}
+
+.dashboard-sidebar {
+  width: 240px;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  z-index: 2;
+  position: relative;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 32px;
+  background-color: #f9fbfc;
+  overflow-y: auto;
+}
+
+/* Responsive - collapse sidebar on smaller screens */
+@media (max-width: 768px) {
+  .dashboard-sidebar {
+    width: 200px;
+  }
+
+  .dashboard-content {
+    padding: 20px;
+  }
+}

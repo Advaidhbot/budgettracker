@@ -1,0 +1,17 @@
+.monthly-comparison-chart {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+  /* Add height constraint */
+  height: 400px;
+}
+
+/* Make sure the canvas inside also takes full height */
+.monthly-comparison-chart canvas {
+  height: 100% !important;
+}

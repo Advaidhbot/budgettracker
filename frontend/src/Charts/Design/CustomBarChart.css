@@ -1,0 +1,36 @@
+.custom-bar-chart-container {
+  background: linear-gradient(90deg, #fff 60%, #f0f4ff 100%);
+  border-radius: 1.1rem;
+  box-shadow: 0 2px 12px rgba(99,102,241,0.07);
+  padding: 1.2rem 1rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-bar-tooltip {
+  background: #fff;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 12px rgba(99,102,241,0.13);
+  padding: 0.7rem 1.2rem;
+  color: #6366f1;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: 1.5px solid #f0f4ff;
+  min-width: 120px;
+  text-align: left;
+  animation: fade-in-up 0.3s cubic-bezier(.4,2,.6,1) both;
+}
+
+.custom-bar-tooltip span {
+  color: #fa2c37;
+  font-weight: 900;
+}
+
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(12px);}
+  100% { opacity: 1; transform: translateY(0);}
+}

@@ -1,0 +1,101 @@
+.auth-layout {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff;
+}
+
+.auth-left {
+  flex: 1;
+  background-color: #f7fdf9;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; /* Ensure this section stays above shapes */
+}
+
+.auth-left h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1b4332;
+  margin-top: 10px;
+  position: relative;
+  z-index: 2; /* Heading stays above decorative shapes */
+}
+
+.stats-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  margin: 30px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.stats-icon {
+  font-size: 28px;
+  color: #28a745;
+  margin-right: 14px;
+}
+
+.stats-info h6 {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.stats-info span {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.auth-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  margin-top: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ✅ Decorative shapes (stay behind content) */
+.auth-left::before,
+.auth-left::after {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  z-index: 0; /* BELOW everything */
+}
+
+.auth-left::before {
+  width: 180px;
+  height: 180px;
+  background: #d4f5e9;
+  top: 60px;     /* moved it down to avoid overlapping heading */
+  left: -50px;
+}
+
+.auth-left::after {
+  width: 140px;
+  height: 140px;
+  background: #b7eed8;
+  bottom: -30px;
+  right: -30px;
+}
+
+.auth-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}

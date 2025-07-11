@@ -1,0 +1,57 @@
+Navbar.css
+
+.navbar {
+  height: 60px;
+  background-color: #1e7f4e;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.navbar__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar__menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar__sidemenu-overlay {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 20;
+}
+
+.navbar__sidemenu {
+  width: 240px;
+  background-color: #ffffff;
+  height: 100%;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar__menu-btn {
+    display: block;
+  }
+
+  .navbar__title {
+    font-size: 18px;
+  }
+}
