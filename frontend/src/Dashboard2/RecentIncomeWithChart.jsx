@@ -3,25 +3,23 @@ import CustomPieChart from "../Charts/CustomPieChart";
 import "./Design/RecentIncomeWithChart.css";
 
 const RecentIncomeWithChart = ({ data, totalIncome }) => {
-  // 🎨 Use a more colorful palette (not just green)
   const COLORS = [
-    "#3b82f6", // Blue
-    "#10b981", // Emerald
-    "#ef4444", // Red
-    "#f59e0b", // Amber
-    "#8b5cf6", // Purple
-    "#ec4899", // Pink
-    "#14b8a6", // Teal
-    "#eab308", // Yellow
-    "#6366f1", // Indigo
-    "#f97316", // Orange
+    "#3b82f6",
+    "#10b981",
+    "#ef4444",
+    "#f59e0b",
+    "#8b5cf6",
+    "#ec4899",
+    "#14b8a6",
+    "#eab308",
+    "#6366f1",
+    "#f97316",
   ];
 
   const [chartData, setChartData] = useState([]);
 
   const prepareChartData = () => {
     const dataArr = data?.map((item, index) => ({
-      // Force uniqueness by adding index so Recharts doesn't merge
       name: `${item?.source} #${index + 1}`,
       amount: item?.amount,
     }));

@@ -7,3 +7,6 @@ const connectDB = () =>
     .catch((err) => console.log(err));
 
 module.exports = connectDB;
+
+
+// mongodb+srv://chandrayukth1:budegettracker123@cluster0.u60u4in.mongodb.net/budgettracker?retryWrites=true&w=majority&appName=Cluster0
