@@ -16,7 +16,7 @@ const CustomPieChart = ({
   showTextAnchor = true,
   colors,
 }) => {
-  // Use provided colors, or fallback to default palette
+  
   const finalColors =
     colors && colors.length > 0
       ? colors
