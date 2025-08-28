@@ -9,7 +9,7 @@ const InfoCard = ({ icon, label, value, color, iconColor }) => {
       </div>
       <div className="info-card__details">
         <p className="info-card__label">{label}</p>
-        <h4 className="info-card__value">${value}</h4>
+        <h4 className="info-card__value">₹ {value}</h4>
       </div>
     </div>
   );
