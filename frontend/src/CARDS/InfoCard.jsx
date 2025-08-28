@@ -15,4 +15,4 @@ const InfoCard = ({ icon, label, value, color, iconColor }) => {
   );
 };
 
-export default InfoCard;
+export default InfoCard
