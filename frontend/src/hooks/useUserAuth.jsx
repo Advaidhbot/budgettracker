@@ -59,8 +59,8 @@ export const useUserAuth = () => {
       }
     } catch (error) {
       console.error("Failed to fetch user info:", error);
-      // clearUser();
-      // navigate("/login");
+      clearUser();
+      navigate("/login");
     }
   };
 

@@ -24,7 +24,7 @@ const Income = () => {
 
   useEffect(()=>{
     fetchIncomeDetails()
-  },[])
+  },[fetchIncomeDetails])
 
 
   //Get All Income Details
@@ -132,7 +132,7 @@ const Income = () => {
     fetchIncomeDetails()
 
     return()=>{}
-  },[])
+  },[fetchIncomeDetails])
 
   return (
     <DashboardLayout activeMenu="Income">
