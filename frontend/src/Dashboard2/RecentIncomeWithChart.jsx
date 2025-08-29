@@ -27,9 +27,10 @@ const RecentIncomeWithChart = ({ data, totalIncome }) => {
     setChartData(dataArr);
   };
 
-  useEffect(() => {
-    prepareChartData();
-  }, [data]);
+// eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  prepareChartData();
+}, [data]);
 
   return (
     <div className="card">

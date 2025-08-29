@@ -22,9 +22,10 @@ const Income = () => {
   });
   const [openAddIncomeModal,setOpenAddIncomeModal]=useState(false)
 
-  useEffect(()=>{
-    fetchIncomeDetails()
-  },[])
+// eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  fetchIncomeDetails();
+}, []);
 
 
   //Get All Income Details

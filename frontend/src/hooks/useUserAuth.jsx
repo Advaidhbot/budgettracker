@@ -1,11 +1,9 @@
 import { UserContext } from "../Context";
 import { useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import axiosInstance from "../utilis/axiosInstance";
 
 export const useUserAuth = () => {
-  const { user, updateUser, clearUser } = useContext(UserContext);
-  const navigate = useNavigate();
+  const { user, updateUser } = useContext(UserContext);
 
   // useEffect(() => {
   //   // if (user) return;
@@ -59,8 +57,6 @@ export const useUserAuth = () => {
       }
     } catch (error) {
       console.error("Failed to fetch user info:", error);
-      // clearUser();
-      // navigate("/login");
     }
   };
 
