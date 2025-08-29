@@ -23,9 +23,6 @@ const Income = () => {
   const [openAddIncomeModal,setOpenAddIncomeModal]=useState(false)
 
 // eslint-disable-next-line react-hooks/exhaustive-deps
-useEffect(() => {
-  fetchIncomeDetails();
-}, []);
 
 
   //Get All Income Details
@@ -47,6 +44,9 @@ useEffect(() => {
       setLoading(false);
     }
   };
+  useEffect(() => {
+  fetchIncomeDetails();
+}, [fetchIncomeDetails]);
   //Handle Add Income
   const handleAddIncome =async(income) => {
     const {source,amount,date,icon}=income
