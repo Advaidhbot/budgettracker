@@ -24,7 +24,7 @@ const Income = () => {
 
   useEffect(()=>{
     fetchIncomeDetails()
-  },[fetchIncomeDetails])
+  },[])
 
 
   //Get All Income Details
