@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import CustomPieChart from "../Charts/CustomPieChart";
 import "./Design/RecentIncomeWithChart.css";
 
@@ -18,19 +18,20 @@ const RecentIncomeWithChart = ({ data, totalIncome }) => {
 
   const [chartData, setChartData] = useState([]);
 
-  const prepareChartData = () => {
+  // ✅ Memoized function so it doesn't change every render
+  const prepareChartData = useCallback(() => {
     const dataArr = data?.map((item, index) => ({
       name: `${item?.source} #${index + 1}`,
       amount: item?.amount,
     }));
 
-    setChartData(dataArr);
-  };
+    setChartData(dataArr || []);
+  }, [data]);
 
-// eslint-disable-next-line react-hooks/exhaustive-deps
-useEffect(() => {
-  prepareChartData();
-}, [data]);
+  // ✅ Depend only on data
+  useEffect(() => {
+    prepareChartData();
+  }, [prepareChartData]);
 
   return (
     <div className="card">
